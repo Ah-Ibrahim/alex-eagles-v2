@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+:root {
+  --color-neon-green: #bdff69;
+  --color-deep-green: #7bd902;  
+
+  --color-teal: #13292e;          
+
+  --color-gray: #dbe1d2;
+  --color-white: #FFFFFF;        
+}
+
+@theme inline {
+  --color-brand: var(--color-neon-green);
+
+  --color-text-brand: var(--color-brand);
+  --color-text-primary: var(--color-gray);
+  --color-text-secondary: var(--color-teal);
+
+  --color-bg-primary: var(--color-teal);
+  --color-bg-secondary: var(--color-gray);
+}
