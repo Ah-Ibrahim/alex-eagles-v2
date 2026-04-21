@@ -29,8 +29,20 @@
 
 @layer base {
   body {
+    --inline-padding: 1.2rem;
+
     font-family: "SpaceGrotesk", sans-serif;
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
+
+    .section-inline-padding {
+      padding: 0 var(--inline-padding);
+    }
+
+    @media (min-width: 640px) {
+      --inline-padding: 2rem;
+    }
+  }
+}
   }
 }
