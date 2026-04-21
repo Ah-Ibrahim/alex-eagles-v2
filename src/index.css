@@ -8,12 +8,12 @@
 
 :root {
   --color-neon-green: #bdff69;
-  --color-deep-green: #7bd902;  
+  --color-deep-green: #7bd902;
 
-  --color-teal: #13292e;          
+  --color-teal: #13292e;
 
   --color-gray: #dbe1d2;
-  --color-white: #FFFFFF;        
+  --color-white: #ffffff;
 }
 
 @theme inline {
@@ -44,5 +44,20 @@
     }
   }
 }
+
+@layer components {
+  .marquee {
+    ul {
+      animation: marqueeAnimation 7s linear infinite;
+    }
+  }
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
