@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+
 :root {
   --color-neon-green: #bdff69;
   --color-deep-green: #7bd902;  
@@ -19,4 +25,12 @@
 
   --color-bg-primary: var(--color-teal);
   --color-bg-secondary: var(--color-gray);
+}
+
+@layer base {
+  body {
+    font-family: "SpaceGrotesk", sans-serif;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
 }
