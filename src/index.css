@@ -51,6 +51,11 @@
       animation: marqueeAnimation 7s linear infinite;
     }
   }
+
+  .problem-grid {
+    display: grid;
+    grid-template-rows: auto auto auto minmax(0, max-content);
+  }
 }
 
 @keyframes marqueeAnimation {
