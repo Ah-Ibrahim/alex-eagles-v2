@@ -4,7 +4,7 @@ import Marquee from "@/components/common/marquee";
 function Hero() {
   return (
     <section>
-      <div className="h-dvh flex flex-col pt-20 pb-5 justify-between">
+      <div className="h-dvh flex flex-col pt-20 pb-10 justify-between">
         <div className="text-3xl section-inline-padding">
           Building the future of <span className="text-brand">drones</span>{" "}
           technology
