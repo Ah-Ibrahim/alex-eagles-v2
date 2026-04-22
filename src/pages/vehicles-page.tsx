@@ -1,5 +1,6 @@
-import Navbar from "../../components/layout/navbar";
-import Hero from "./components/hero";
+import Navbar from "../components/layout/navbar";
+
+import Hero from "../features/vehicles/components/hero";
 
 function VehiclesPage() {
   return (
