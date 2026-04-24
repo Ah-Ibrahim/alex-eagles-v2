@@ -56,6 +56,10 @@
     display: grid;
     grid-template-rows: auto auto auto minmax(0, max-content);
   }
+
+  .problem-grid--textless {
+    grid-template-rows: auto auto minmax(0, max-content);
+  }
 }
 
 @keyframes marqueeAnimation {
