@@ -38,7 +38,7 @@ function useProblemAnimation(
           trigger: containerRef.current,
           start: "top top", // when the top of the trigger hits the top of the viewport
           end: "+60%", // end after scrolling 500px beyond the start
-          markers: true,
+          // markers: true,
           scrub: 1,
           pin: true,
           onUpdate(self) {
