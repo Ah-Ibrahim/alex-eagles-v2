@@ -24,6 +24,7 @@ function Problem1() {
               animationRef.current = dotLottie;
             }}
             src="/animation.json"
+            mode="reverse"
             layout={{
               fit: "fill",
             }}
