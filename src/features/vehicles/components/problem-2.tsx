@@ -16,9 +16,9 @@ function Problem2() {
       <div className="pt-[12vh] pb-14 section-inline-padding h-full problem-grid problem-grid--textless items-end gap-y-8">
         <div className="space-y-4">
           <div className="uppercase text-xs">The problem</div>
-          <div className="text-4xl">
+          <h2 className="text-4xl">
             They demand precision, reliability, and intelligence.
-          </div>
+          </h2>
         </div>
         <div className="self-start flex items-center gap-x-2">
           2 <div className="w-12 h-px bg-current"></div> 2
