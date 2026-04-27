@@ -37,10 +37,11 @@ function useProblemAnimation(
         scrollTrigger: {
           trigger: containerRef.current,
           start: "top top", // when the top of the trigger hits the top of the viewport
-          end: "+60%", // end after scrolling 500px beyond the start
+          end: "+200%", // end after scrolling 500px beyond the start
           // markers: true,
           scrub: 1,
           pin: true,
+          refreshPriority: 1,
           onUpdate(self) {
             const requiredFrame = Math.round(self.progress * finalFrame);
 
