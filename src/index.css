@@ -19,12 +19,14 @@
 @theme inline {
   --color-brand: var(--color-neon-green);
 
-  --color-text-brand: var(--color-brand);
-  --color-text-primary: var(--color-gray);
-  --color-text-secondary: var(--color-teal);
+  /* for text */
+  --color-content-brand: var(--color-brand);
+  --color-content-primary: var(--color-gray);
+  --color-content-secondary: var(--color-teal);
 
-  --color-bg-primary: var(--color-teal);
-  --color-bg-secondary: var(--color-gray);
+  /* for surfaces like backgrounds */
+  --color-surface-primary: var(--color-teal);
+  --color-surface-secondary: var(--color-gray);
 }
 
 @layer base {
@@ -32,8 +34,8 @@
     --inline-padding: 1.2rem;
 
     font-family: "SpaceGrotesk", sans-serif;
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-primary);
+    background-color: var(--color-surface-primary);
+    color: var(--color-content-primary);
 
     .section-inline-padding {
       padding: 0 var(--inline-padding);
@@ -47,8 +49,11 @@
 
 @layer components {
   .marquee {
+    --marquee-duration: 15s;
+
     ul {
-      animation: marqueeAnimation 7s linear infinite;
+      animation: marqueeAnimation calc(var(--marquee-duration) / 2) linear
+        infinite;
     }
   }
 

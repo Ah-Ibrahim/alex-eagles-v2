@@ -10,7 +10,7 @@ function Problem2() {
 
   return (
     <section
-      className="h-dvh bg-bg-secondary text-text-secondary"
+      className="h-dvh bg-surface-secondary text-content-secondary"
       ref={containerRef}
     >
       <div className="pt-[12vh] pb-14 section-inline-padding h-full problem-grid problem-grid--textless items-end gap-y-8">
