@@ -20,7 +20,7 @@ function useProblem2Animation(
             trigger: containerRef.current,
             start: "top 25%", // when the top of the trigger hits the bottom of the viewport
             end: "center 30%", // when the bottom of the trigger hits the top of the viewport
-            markers: true,
+            // markers: true,
             refreshPriority: 1,
             scrub: 1,
           },
