@@ -65,6 +65,24 @@
   .problem-grid--textless {
     grid-template-rows: auto auto minmax(0, max-content);
   }
+
+  .counter {
+    counter-reset: count;
+
+    .counter__superscript {
+      position: relative;
+      width: max-content;
+
+      &::after {
+        counter-increment: count;
+        content: counter(count);
+        position: absolute;
+        top: 0em;
+        right: -1em;
+        font-size: 0.6em;
+      }
+    }
+  }
 }
 
 @keyframes marqueeAnimation {
